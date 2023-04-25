@@ -1,0 +1,57 @@
+USER
+/////////////////////////////////////////////////////////////////////
+GET             /users                => get all users
+GET            /users/:id             => get user by id
+DELETE        /users/:id              => delete user by id
+PATCH        /users/:id               => edit user by id
+POST        /users/register           => add new user
+POST       /users/login               => login as user
+POST      /users/login/admin          => login as admin
+GET     /users//logout/:id                => logout
+
+
+Product
+/////////////////////////////////////////////////////////////////////
+GET            /product                 => get all products
+POST          /product                  =>admin add new product
+GET          /product/:id               => get product by id
+DELETE      /product/:id                =>admin delete product by id
+PUT        /product/:id                 =>admin edit product by id   
+GET       /product/category/:catID      => GET PRODUCTS BY CATEGORY ID
+GET      /product/subcat/:subID         => GET PRODUCTS BY SUBCATEGORY ID
+
+
+Category
+/////////////////////////////////////////////////////////////////////
+GET            /category                 => get all categories
+POST          /category                  =>admin add new category
+GET          /category/:id               => get category by id
+DELETE      /category/:id                =>admin delete category by id
+PUT        /category/:id                 =>admin edit category by id   
+
+
+SubCategory
+/////////////////////////////////////////////////////////////////////
+GET            /subcat                 => get all subcategories
+POST          /subcat                  =>admin add new subcategory
+GET          /subcat/:id               => get subcategory by id
+DELETE      /subcat/:id                =>admin delete subcategory by id
+PUT        /subcat/:id                 =>admin edit subcategory by id    
+GET       /subcat/category/:catID      =>GET ALL SUBCATEGORIES OF SPECIFIC CATEGORY
+
+
+Cart
+/////////////////////////////////////////////////////////////////////
+GET            /cart                   => GET ALL CARTS FOR USER
+POST          /cart                    => add to cart
+GET          /cart/:id                 => GET CART BY USER ID
+DELETE      /cart/:id                  => DELETE CART BY ID
+PUT        /cart/:id                   => Edit cart by id    
+
+
+Favourite
+/////////////////////////////////////////////////////////////////////
+GET            /fav                   => GET ALL favs
+POST          /fav                    => add to fav
+DELETE      /fav/:id                  => DELETE fav BY ID
+
